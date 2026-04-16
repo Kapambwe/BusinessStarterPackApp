@@ -1,0 +1,42 @@
+:root {
+  --mbsp-primary: #667eea;
+  --mbsp-success: #43e97b;
+  --mbsp-info:    #4facfe;
+  --mbsp-warning: #fa709a;
+  --mbsp-danger:  #f5576c;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; margin: 0; }
+
+.stat-card { border-radius: 16px; padding: 1.25rem; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+@media (min-width: 992px) {
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+.pack-card:hover { transform: translateY(-4px); transition: transform 0.2s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+.risk-pill-verylow  { background:#d1fae5;color:#065f46;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;display:inline-block; }
+.risk-pill-low      { background:#dbeafe;color:#1e40af;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;display:inline-block; }
+.risk-pill-moderate { background:#fef3c7;color:#92400e;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;display:inline-block; }
+.risk-pill-high     { background:#fee2e2;color:#991b1b;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;display:inline-block; }
+.risk-pill-critical { background:#7f1d1d;color:white;border-radius:12px;padding:2px 10px;font-size:0.75rem;font-weight:600;display:inline-block; }
+
+.badge-govt    { background:#1e40af;color:white;border-radius:8px;padding:2px 8px;font-size:0.7rem;display:inline-block; }
+.badge-private { background:#065f46;color:white;border-radius:8px;padding:2px 8px;font-size:0.7rem;display:inline-block; }
+.badge-export  { background:#92400e;color:white;border-radius:8px;padding:2px 8px;font-size:0.7rem;display:inline-block; }
+
+.hero-section { background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:70vh;display:flex;align-items:center;color:white; }
+
+.gradient-green  { background:linear-gradient(135deg,#43e97b,#38f9d7); }
+.gradient-blue   { background:linear-gradient(135deg,#4facfe,#00f2fe); }
+.gradient-purple { background:linear-gradient(135deg,#667eea,#764ba2); }
+.gradient-pink   { background:linear-gradient(135deg,#fa709a,#fee140); }
+.gradient-violet { background:linear-gradient(135deg,#f093fb,#f5576c); }
+
+#blazor-error-ui { background:lightyellow;bottom:0;box-shadow:0 -1px 2px rgba(0,0,0,0.2);display:none;left:0;padding:0.6rem 1.25rem 0.7rem;position:fixed;width:100%;z-index:1000; }
+#blazor-error-ui .dismiss { cursor:pointer;position:absolute;right:0.75rem;top:0.5rem; }
